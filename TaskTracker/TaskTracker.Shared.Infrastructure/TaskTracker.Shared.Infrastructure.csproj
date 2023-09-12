@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TaskTracker.Shared.Abstractions\TaskTracker.Shared.Abstractions.csproj" />
+        <ProjectReference Include="..\TaskTracker.Shared.Abstractions\TaskTracker.Shared.Abstractions.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+    </ItemGroup>
 </Project>

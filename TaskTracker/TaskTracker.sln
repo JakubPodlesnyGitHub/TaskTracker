@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{859FDFF9-C36A-4B8D-A691-CED63ECFC158}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{602859CC-1A64-4C0C-A0D7-0E41F3D09789}"
@@ -10,24 +13,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{399685
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{6C072EAA-A110-4F7A-A629-EFB596A3C123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Bootstarpper", "TaskTracker.Bootstarpper\TaskTracker.Bootstarpper.csproj", "{2D9FEEC9-A366-4B2D-A7F9-7977D3A8CA04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskTracker.Bootstrapper", "TaskTracker.Bootstarpper\TaskTracker.Bootstrapper.csproj", "{2D9FEEC9-A366-4B2D-A7F9-7977D3A8CA04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Shared.Infrastructure", "TaskTracker.Shared.Infrastructure\TaskTracker.Shared.Infrastructure.csproj", "{32D17051-810A-4648-9B0C-A12212C74F2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskTracker.Shared.Infrastructure", "TaskTracker.Shared.Infrastructure\TaskTracker.Shared.Infrastructure.csproj", "{32D17051-810A-4648-9B0C-A12212C74F2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Shared.Abstractions", "TaskTracker.Shared.Abstractions\TaskTracker.Shared.Abstractions.csproj", "{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskTracker.Shared.Abstractions", "TaskTracker.Shared.Abstractions\TaskTracker.Shared.Abstractions.csproj", "{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tasks", "Tasks", "{1A5AF441-DFE0-43F7-A74F-DD44155C57B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskTracker.Modules.Tasks.Api", "TaskTracker.Modules.Tasks.Api\TaskTracker.Modules.Tasks.Api.csproj", "{CA943416-D9E9-4308-B101-FE874D70B977}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskTracker.Modules.Tasks.Core", "TaskTracker.Modules.Tasks.Core\TaskTracker.Modules.Tasks.Core.csproj", "{F6E9F876-D389-40D9-8FB5-B9805F7B726C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CC2FE25C-FC49-4CC0-9E81-ACF2C5A81EAA} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
-		{399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
-		{6C072EAA-A110-4F7A-A629-EFB596A3C123} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
-		{2D9FEEC9-A366-4B2D-A7F9-7977D3A8CA04} = {6C072EAA-A110-4F7A-A629-EFB596A3C123}
-		{32D17051-810A-4648-9B0C-A12212C74F2F} = {399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D}
-		{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4} = {399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2D9FEEC9-A366-4B2D-A7F9-7977D3A8CA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +43,27 @@ Global
 		{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA943416-D9E9-4308-B101-FE874D70B977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA943416-D9E9-4308-B101-FE874D70B977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA943416-D9E9-4308-B101-FE874D70B977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA943416-D9E9-4308-B101-FE874D70B977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E9F876-D389-40D9-8FB5-B9805F7B726C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E9F876-D389-40D9-8FB5-B9805F7B726C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E9F876-D389-40D9-8FB5-B9805F7B726C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E9F876-D389-40D9-8FB5-B9805F7B726C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC2FE25C-FC49-4CC0-9E81-ACF2C5A81EAA} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
+		{399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
+		{6C072EAA-A110-4F7A-A629-EFB596A3C123} = {859FDFF9-C36A-4B8D-A691-CED63ECFC158}
+		{2D9FEEC9-A366-4B2D-A7F9-7977D3A8CA04} = {6C072EAA-A110-4F7A-A629-EFB596A3C123}
+		{32D17051-810A-4648-9B0C-A12212C74F2F} = {399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D}
+		{F2AFBEF0-5B72-4487-AD51-C68BA6F44CC4} = {399685CC-1CB1-4D2F-ACE1-CD2364DA9B9D}
+		{1A5AF441-DFE0-43F7-A74F-DD44155C57B4} = {CC2FE25C-FC49-4CC0-9E81-ACF2C5A81EAA}
+		{CA943416-D9E9-4308-B101-FE874D70B977} = {1A5AF441-DFE0-43F7-A74F-DD44155C57B4}
+		{F6E9F876-D389-40D9-8FB5-B9805F7B726C} = {1A5AF441-DFE0-43F7-A74F-DD44155C57B4}
 	EndGlobalSection
 EndGlobal
